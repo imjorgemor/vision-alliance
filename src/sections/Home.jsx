@@ -8,7 +8,10 @@ const Home = () => {
         <>
             <section className='home-cover'>
                 <div className='home-wrapper'>
-                    <article>
+                    <div>
+                        <p className='title-text'>UNION VISION ALLIANCE</p>
+                    </div>
+                    <article className='mt-2'>
                         <h1 className="title-text">Helping union members get the most out of their vision benefits</h1>
                     </article>
                     <article className='info-box'>

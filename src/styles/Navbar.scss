@@ -4,7 +4,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 1rem 0.5rem;
-    position:absolute;
+    position: absolute;
     z-index: 999;
 }
 
@@ -22,9 +22,15 @@
 .navbar-links {
     flex: 1;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
     list-style: none;
+    flex-wrap: wrap;
+
+    @media screen and (min-width: 769px) {
+        justify-content: center;
+        align-items: center;
+    }
 
     li {
         margin: 0 1rem;
