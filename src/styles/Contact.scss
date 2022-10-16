@@ -1,0 +1,103 @@
+.contact {
+    flex: 1;
+    width: 100%;
+    flex-direction: column;
+}
+
+.contact-cover {
+    height: 100%;
+    width: 100%;
+    padding: 3rem 3rem 3rem;
+    max-width: 1400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+
+    @media screen and (min-width: 679px) {
+        padding: 6rem;
+    }
+}
+
+.contact-wrapper {
+    display: flex;
+    flex-direction: column;
+
+    @media screen and (min-width: 679px) {
+        flex-direction: row;
+    }
+}
+
+.contact-info {
+    position: relative;
+}
+
+.contact-title {
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: left;
+    color: var(--white-color);
+
+    @media screen and (min-width: 679px) {
+        font-size: 3rem;
+    }
+
+
+}
+
+.contact-top {
+    background-color: var(--white-color);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+
+    svg {
+        margin: auto;
+    }
+}
+
+.contacts-subtitle {
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-align: left;
+    color: var(--white-color);
+}
+
+.contacts-label {
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: left;
+    color: var(--white-color);
+}
+
+.contacts-rights {
+    color: var(--lightGray-color);
+}
+
+.partner-info {
+    position: relative;
+
+    div {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+}
+
+.partner-logo {
+    height: 80px;
+    width: 80px;
+    margin-bottom: 1rem;
+    background-color: var(--white-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+
+    img {
+        height: auto;
+        width: 100%;
+    }
+}
+
+
