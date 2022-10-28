@@ -4,13 +4,13 @@ export const HOW_STEPS = [
         description: "Fill out the summary of benefits request form.",
         subdescription:"This will not effect your benefits at all. It's a summary that will be emailed to you within 2 business days.",
         link: "Summary of benefits request form",
-        href: "link website"
+        href: "https://form.typeform.com/to/q4ili7W6"
     },
     {
         title: "02",
         description: "Fill out the Eye Exam request form. Here or in your summary of benefits email.",
         link: "Eye exam request form",
-        href: "link website"
+        href: "https://form.typeform.com/to/IdOc5PNj"
     },
     {
         title: "03",

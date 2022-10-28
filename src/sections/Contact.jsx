@@ -50,7 +50,7 @@ const Contact = () => {
                     </div>
                 </div>
                 <div>
-                    <a className="link"><span>Contact here to become a partner</span>
+                    <a href='mailto:Ryan@huxleyoptical.com' className="link"><span>Contact here to become a partner</span>
                     </a>
                 </div>
 
