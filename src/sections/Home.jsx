@@ -20,7 +20,7 @@ const Home = () => {
                     </article>
                     <article className='blue-box'>
                         <div>
-                            <p>Get your summary of benefits emailed by answering a few questions here.</p>
+                            <p>Find out how much money you hav to spend by filling out a Summary of Benefits here</p>
                         </div>
                         <a className='link' href='https://form.typeform.com/to/q4ili7W6' target="_blank" rel="noreferrer"><span>Get the benefits</span></a>
                        <Triangle color="#fff" rotate='rotate(0)' className="triangle-top--right m-1"/>

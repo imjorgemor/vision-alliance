@@ -13,7 +13,7 @@ const About = () => {
 
                 <article className="about-main mr-2">
                     <div>
-                        <h3 className='about-subtitle'>Get your ophtalmologic review and new glasses without cost</h3>
+                        <h3 className='about-subtitle'>We're here to help you get the most out of your vision benefits</h3>
                     </div>
                     <div>
                         <a href="#how it works" className='link link--black mt-1'><span>Learn more</span></a>
