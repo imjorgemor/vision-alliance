@@ -1,5 +1,5 @@
 <header
-    class="bg-[#111] py-3 px-10 border-b-2 justify-center fixed top-0 w-full z-40 flex"
+    class="bg-[#111] py-3 px-10 border-b-2 justify-center fixed top-0 w-full z-40 hidden sm:flex"
 >
     <nav id="menu-header">
         <ul class="flex [&>li>a]:inline-block font-medium [&>li>a]:px-4 [&>li>a]:py-2">
@@ -51,21 +51,11 @@
     const navLinks = document.querySelectorAll('header nav ul li a')
     const sections = document.querySelectorAll('section')
     const listDevices = /webOS|iPhone|iPad|Android|Windows Phone/i;
-    const mouseEvent = () =>{
-        if (listDevices.test(window.navigator.userAgent)) return 'touchenter'
-        return 'mouseenter'
-    }
-    
-    
-    const clickEvent = () =>{
-        if (listDevices.test(window.navigator.userAgent)) return 'touchstart'
-        return 'click'
-    }
 
     sections.forEach(section=> {
-        section.addEventListener(mouseEvent(), ()=>{
+        section.addEventListener('mouseenter', ()=>{
             navLinks.forEach((link: any)=>{
-                link.addEventListener(clickEvent(), ()=>{
+                link.addEventListener('click', ()=>{
                     navLinks.forEach((link:any)=>{
                         link.classList.remove('text-[#FF0100]')
                     })
