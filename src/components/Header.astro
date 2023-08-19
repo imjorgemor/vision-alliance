@@ -50,11 +50,16 @@
 <script>
     const navLinks = document.querySelectorAll('header nav ul li a')
     const sections = document.querySelectorAll('section')
+    const listDevices = /webOS|iPhone|iPad|Android|Windows Phone/i;
+    const event = () =>{
+        if (listDevices.test(window.navigator.userAgent)) return 'touchstart'
+        return 'click'
+    }
 
     sections.forEach(section=> {
         section.addEventListener('mouseenter', ()=>{
             navLinks.forEach((link: any)=>{
-                link.addEventListener('click', ()=>{
+                link.addEventListener(event(), ()=>{
                     navLinks.forEach((link:any)=>{
                         link.classList.remove('text-[#FF0100]')
                     })
