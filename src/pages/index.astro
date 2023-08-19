@@ -1,0 +1,79 @@
+---
+import Layout from '../layouts/Layout.astro'
+import Header from '../components/Header.astro'
+import Section from '../components/Section.astro'
+import Home from '../components/Home.astro'
+import About from '../components/About.astro'
+import Works from '../components/Works.astro'
+import OnDemand from '../components/OnDemand.astro'
+import Contact from '../components/Contact.astro'
+---
+
+<Layout title="UNION VISION ALLIANCE - Get the most out of their vision benefits">
+    <Header />
+    <main class="snap-y snap-mandatory relative w-full h-screen overflow-auto">
+        <div class="snap-center">
+            <Section
+                id="home"
+                image="/UNION_VISION_ALLIANCE_01.webp"
+            >
+                <div slot="content">
+                    <Home />
+                </div>
+            </Section>
+        </div>
+        <div class="snap-center">
+            <Section
+                id="about"
+                image="/UNION_VISION_ALLIANCE_02.webp"
+            >
+                <div
+                    slot="content"
+                    class="relative"
+                >
+                    <About />
+                </div>
+            </Section>
+        </div>
+        <div class="snap-center">
+            <Section
+                id="howitworks"
+                image="/UNION_VISION_ALLIANCE_03.webp"
+            >
+                <div
+                    slot="content"
+                    class="relative"
+                >
+                    <Works />
+                </div>
+            </Section>
+        </div>
+        <div class="snap-center">
+            <Section
+                id="ondemand"
+                image="/UNION_VISION_ALLIANCE_04.webp"
+            >
+                <div
+                    slot="content"
+                    class="relative"
+                >
+                    <OnDemand />
+                </div>
+            </Section>
+        </div>
+        <div class="snap-center">
+            <Section
+                id="contact"
+                image="/UNION_VISION_ALLIANCE_BK.webp"
+            >
+                <div
+                    slot="content"
+                    class="relative"
+                >
+                    <Contact />
+                </div>
+            </Section>
+        </div>
+    </main>
+    
+</Layout>

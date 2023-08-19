@@ -1,0 +1,26 @@
+---
+const { image, id } = Astro.props
+---
+
+<section
+    id={id}
+    class="bg-[#111] relative min-h-screen w-screen overflow-hidden pt-[66px]"
+>
+    <div class="relative z-30 px-4 sm:px-8 sm:w-[85%] mt-4">
+        <slot name="content" />
+    </div>
+
+    <div>
+        <figure class="absolute h-full w-screen top-0 bottom-0 z-10">
+            <img
+                class="object-cover h-full w-full"
+                src={image}
+                alt="section cover image"
+            />
+        </figure>
+        <div
+            class="absolute h-full w-screen top-0 bottom-0 z-20 bg-gradient-to-r from-[#111] from-30% via-[#111]/4"
+        >
+        </div>
+    </div>
+</section>

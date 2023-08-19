@@ -1,0 +1,47 @@
+---
+import RedDivider from './RedDivider.astro'
+---
+
+<div>
+    <h2 class="text-2xl sm:text-3xl text-[#FF0100] font-semibold">HOW IT WORKS</h2>
+    <div class="mt-4 flex flex-col gap-2">
+        <p class="text-xl sm:text-2xl font-semibold">
+            1. Fill out the Summary of Benefits Request Form
+        </p>
+        <button
+            id="button"
+            class="px-4 py-2 bg-[#FF0100] max-w-fit font-semibold hover:bg-[#ff0000bd] transition ease-in"
+        >
+            Summary of Benefits
+        </button>
+        <p class="text-base sm:text-xl font-semibold">
+            This will not affect your benefits. A summary will be emailed to you within 2 business
+            days.
+        </p>
+    </div>
+    <RedDivider />
+    <div class="mt-4 flex flex-col gap-2">
+        <p class="text-2xl sm:text-3xl font-semibold">2. We'll take care of the rest!</p>
+        <p class="mt-2 text-base sm:text-xl font-semibold">
+            Once you fill out the Summary of Benefits Request Form, we will:
+        </p>
+        <ul class="flex flex-col gap-2 list-disc pl-6 marker:text-[#FF0100]">
+            <li class="ttext-base sm:text-xl font-semibold">
+                Contact you with a Summary of your Benefits
+            </li>
+            <li class="text-base sm:text-xl font-semibold">
+                Set up a free optional eye exam with a trusted UVA partner (depending on your needs
+            </li>
+            <li class="text-base sm:text-xl font-semibold">
+                Set up an appointment with a UVA Sponsor to help you get the glasses you deserve!
+            </li>
+        </ul>
+    </div>
+</div>
+
+<script>
+    import { createPopup } from '@typeform/embed'
+    import '@typeform/embed/build/css/popup.css'
+    const { toggle } = createPopup('bVhdABaJ',{autoClose: true})
+    document.getElementById('button').onclick = toggle
+</script>

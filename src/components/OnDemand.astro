@@ -1,0 +1,58 @@
+---
+import RedDivider from './RedDivider.astro'
+---
+
+<div>
+    <h2 class="text-2xl sm:text-3xl text-[#FF0100] font-semibold">UVA ON DEMAND</h2>
+    <div class="mt-4 flex flex-col gap-2">
+        <p class="text-base sm:text-xl font-semibold">
+            Book us to come to vour business and ensure that all your employees eyewear needs are
+            being met.
+        </p>
+    </div>
+    <RedDivider />
+    <div class="mt-4 flex flex-col gap-2">
+        <p class="text-base sm:text-xl font-semibold">We offer:</p>
+        <ul class="flex flex-col gap-2 list-disc pl-6 marker:text-[#FF0100]">
+            <li class="text-base sm:text-xl font-semibold">
+                Work-site approved safety glasses and sunglasses.
+            </li>
+            <li class="text-base sm:text-xl font-semibold">
+                Brands like Oakley, Wiley X, and more.
+            </li>
+            <li class="text-base sm:text-xl font-semibold">
+                Office, Migraine, Worksite Transitions lenses available.
+            </li>
+        </ul>
+    </div>
+    <RedDivider />
+    <div class="mt-4 flex flex-col gap-2">
+        <p class="text-base sm:text-xl font-semibold">How it Works:</p>
+        <ul class="flex flex-col gap-2 list-disc pl-6 marker:text-[#FF0100]">
+            <li class="text-base sm:text-xl font-semibold">
+                Fill out our UVA On Demand Questionnaire
+            </li>
+            <li class="text-base sm:text-xl font-semibold">
+                <p class="text-base sm:text-xl font-semibold mb-4">
+                    We'll bring union approved eyewear to your worksite or office.
+                </p>
+                <button
+                    id="button2"
+                    class="px-4 py-2 bg-[#FF0100] max-w-fit font-semibold hover:bg-[#ff0000bd] transition ease-in"
+                >
+                    UVA On Demand
+                </button>
+            </li>
+            <li class="text-base sm:text-xl font-semibold mt-2">
+                Pick out what you like and enjoy your new eyewear.
+            </li>
+        </ul>
+    </div>
+</div>
+
+<script>
+    import { createPopup } from '@typeform/embed'
+    import '@typeform/embed/build/css/popup.css'
+    const { toggle } = createPopup('zJSBLZ61', {autoClose: true})
+    document.getElementById('button2').onclick = toggle
+</script>

@@ -1,0 +1,73 @@
+<header
+    class="bg-[#111] py-3 px-10 border-b-2 justify-center fixed top-0 w-full z-40 flex"
+>
+    <nav id="menu-header">
+        <ul class="flex [&>li>a]:inline-block font-medium [&>li>a]:px-4 [&>li>a]:py-2">
+            <li><a href="#home" class="text-[#FF0100] text-xs sm:text-base">Home</a></li>
+            <li><a href="#about" class="text-xs sm:text-base">About</a></li>
+            <li><a href="#howitworks" class="whitespace-nowrap text-xs sm:text-base">How It Works</a></li>
+            <li><a href="#ondemand" class="whitespace-nowrap text-xs sm:text-base">On Demand</a></li>
+            <li><a href="#contact" class="text-xs sm:text-base">Contact</a></li>
+        </ul>
+    </nav>
+    <!-- <div
+        id="menu-backdrop"
+        class={`
+            absolute bg-red-500 backdrop-blur-lg rounded
+            translate-x-[var(--left)] translate-y-[var(--top)]
+            left-0 top-0
+            w-[var(--width)]  h-[var(--height)]
+            transition-all duration-300
+            ease-in-out opacity-0 -z-10
+            `}
+    > -->
+    </div>
+</header>
+
+<!-- <script>
+    const listItem = document.querySelectorAll('#menu-header li')
+    const menuBackdrop = document.querySelector('#menu-backdrop') as HTMLElement
+
+    listItem.forEach((item) => {
+        item.addEventListener('mouseenter', () => {
+            const { left, top, width, height } = item.getBoundingClientRect()
+            menuBackdrop.style.setProperty('--left', `${left}px`)
+            menuBackdrop.style.setProperty('--top', `${top}px`)
+            menuBackdrop.style.setProperty('--width', `${width}px`)
+            menuBackdrop.style.setProperty('--height', `${height}px`)
+            menuBackdrop.style.opacity= "1"
+            menuBackdrop.style.visibility= "visible"
+        })
+
+        item.addEventListener('mouseleave', ()=> {
+            menuBackdrop.style.opacity= "0"
+            menuBackdrop.style.visibility= "hidden"
+
+        })
+    })
+</script> -->
+
+<script>
+    const navLinks = document.querySelectorAll('header nav ul li a')
+    const sections = document.querySelectorAll('section')
+
+    sections.forEach(section=> {
+        section.addEventListener('mouseenter', ()=>{
+            navLinks.forEach((link: any)=>{
+                link.addEventListener('click', ()=>{
+                    navLinks.forEach((link:any)=>{
+                        link.classList.remove('text-[#FF0100]')
+                    })
+                    link.classList.add('text-[#FF0100]')
+                })
+                const sectionName = link.hash.split('#')[1]
+                if(section.id === sectionName){
+                    link.classList.add('text-[#FF0100]')
+                    return
+                }  
+                link.classList.remove('text-[#FF0100]')
+                return
+            })
+        })
+    })   
+</script>

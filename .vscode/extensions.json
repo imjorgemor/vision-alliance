@@ -1,0 +1,4 @@
+{
+  "recommendations": ["astro-build.astro-vscode","vscode.typescript-language-features"],
+  "unwantedRecommendations": []
+}
