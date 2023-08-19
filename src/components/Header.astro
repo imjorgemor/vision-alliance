@@ -51,15 +51,21 @@
     const navLinks = document.querySelectorAll('header nav ul li a')
     const sections = document.querySelectorAll('section')
     const listDevices = /webOS|iPhone|iPad|Android|Windows Phone/i;
-    const event = () =>{
+    const mouseEvent = () =>{
+        if (listDevices.test(window.navigator.userAgent)) return 'touchenter'
+        return 'mouseenter'
+    }
+    
+    
+    const clickEvent = () =>{
         if (listDevices.test(window.navigator.userAgent)) return 'touchstart'
         return 'click'
     }
 
     sections.forEach(section=> {
-        section.addEventListener('mouseenter', ()=>{
+        section.addEventListener(mouseEvent(), ()=>{
             navLinks.forEach((link: any)=>{
-                link.addEventListener(event(), ()=>{
+                link.addEventListener(clickEvent(), ()=>{
                     navLinks.forEach((link:any)=>{
                         link.classList.remove('text-[#FF0100]')
                     })
