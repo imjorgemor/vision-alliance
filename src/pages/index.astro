@@ -7,6 +7,7 @@ import About from '../components/About.astro'
 import Works from '../components/Works.astro'
 import OnDemand from '../components/OnDemand.astro'
 import Contact from '../components/Contact.astro'
+import Brands from '../components/Brands.astro'
 ---
 
 <Layout title="UNION VISION ALLIANCE - Get the most out of their vision benefits">
@@ -58,6 +59,19 @@ import Contact from '../components/Contact.astro'
                     class="relative"
                 >
                     <OnDemand />
+                </div>
+            </Section>
+        </div>
+        <div class="snap-center">
+            <Section
+                id="brands"
+                image="/UNION_VISION_ALLIANCE_BK.webp"
+            >
+                <div
+                    slot="content"
+                    class="relative"
+                >
+                    <Brands />
                 </div>
             </Section>
         </div>
